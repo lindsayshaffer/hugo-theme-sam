@@ -1,11 +1,13 @@
-baseurl                  = "https://example.com"           # Your domain name
+baseurl                  = "/"                              # Your domain name
 languageCode             = "en-us"
 defaultContentLanguage   = "en"
 isMultilingual           = false
-title                    = "Call me Sam"
+title                    = "Introducing Daphne June Sheckells"
 theme                    = "sam"
 pygmentsStyle            = "monokai"                        # https://help.farbox.com/pygments.html
 pygmentsCodefences       = true
+home                     = [ "HTML", "CSS", "RSS" ]
+section                  = [ "HTML", "RSS" ]
 # googleAnalytics        = ""                               # Tracking code, eg. "UA-111111111-1"
 
 [params]
@@ -13,36 +15,61 @@ pygmentsCodefences       = true
     dateformfull         = "Mon Jan 2 2006 15:04:05 EST"
     favicon              = "sam.ico"
     homepage             = "main"                           # What to call the home page link
-    footerText           = "Call me Sam, a theme for Hugo."
+    footerText           = "A website created by Lindsay S. Sheckells"
+    color                = "ocean"
 
 # Metadata for Open Graph and Twitter
     description          = "A new Hugo site."               # Max 160 characters show in search results
     images               = ["tn.png"]                       # Image that shows on Twitter cards and Open Graph links to the site
-    title                = "Call me Sam"
+    title                = "oh baby."
     # rss                = ""
 
 [[params.videoBackground.sources]]
-    source  = "/sample_video.mp4"
+    source  = "/poppies.mp4"
     type    = "video/mp4"
-    poster  = "/background.png"
+    poster  = "/background_pop.png"
 [params.videoBackground]
     overlay = "rgba(0, 0, 0, 0.4)" # optional
 
 [[params.mainMenu]]
-    link = "posts"
-    text = "posts"
+    link = "home"
+    text = "welcome"
 
 [[params.mainMenu]]
-    link = "gallery"
-    text = "gallery"
+    link = "registry"
+    text = "baby registry"
 
 [[params.mainMenu]]
-    link = "portfolio"
-    text = "portfolio"
+    link = "recommend"
+    text = "recommendations"
 
 [[params.mainMenu]]
-    link = "about"
-    text = "who is sam?"
+    link = "shower"
+    text = "RSVP for virtual baby shower"
+
+[[params.mainMenu]]
+    link = "USpictures"
+    text = "ultrasound pictures"
 
 [imaging]
     quality = 75
+
+[privacy]
+    [privacy.googleAnalytics]
+        anonymizeIP = true
+        disable = false
+        respectDoNotTrack = true
+        useSessionStorage = false
+    [privacy.instagram]
+        disable = false
+        simple = false
+    [privacy.twitter]
+        disable = false
+        enableDNT = true
+        simple = false
+    [privacy.vimeo]
+        disable = false
+        simple = false
+    [privacy.youtube]
+        disable = false
+        privacyEnhanced = true
